@@ -28,24 +28,24 @@ $errors = [] ;
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   </head>
 <body>
-
-
-<<<<<<< HEAD
+  <nav>
+     <div class="nav-wrapper amber darken-1" style="color:black;">
+       <div id="nav-mobile" class="right">
+         <span class="brand-logo" style="margin-left:15px; color:black; text-align: right;"><b>Keep</b></span>
+         <input class="waves-light btn amber" type="submit" value="log out" style="color: black; margin: 15px;">
+       </div>
+     </div>
+   </nav>
   <div class="container">
-    <h1>Click me - Add a new entry to the notebook </h1>
-    <form action="" method="post" >
-      Title <br />
-      <input type="text" name="title" value="<?php $title; ?>" /><br />
-      Content <br />
-      <input type="text" name="content" value="<?php $content; ?>" /><br />
-      <!-- Tags <br />
-      <input type="text" name="tags" value="<?php $tags; ?>" /><br />
-      Category<br />
-      <input type="text" name="category" value="<?php $category ?>" /> <br /> -->
-      <input type="submit" name="submit" value="Submit"  />
+    <br><br>
+    <form class="container" action="" method="post" style="width:500;" >
+      <input class="waves-light btn amber right" type="submit" name="submit" value="save" style="color:black;">
+      Title
+      <input type="text" name="title">
+      Content
+      <input type="text" name="content" autofocus>
      </form>
 
-    <h1> Click me - Display Entries </h1>
     <?php  $entries = get_entries_reverse () ; ?>
     <ul >
         <?php
@@ -76,30 +76,6 @@ $errors = [] ;
     </ul >
   </div>
 
-=======
-  <div data-role="main" class="ui-content">
-    <div data-role="collapsible" id="add" >
-      <h1>Click me - Add a new entry to the notebook </h1>
-      <form action="" method="post" >
-        Title <br />
-        <input type="text" name="title" value="<?php $title; ?>" /><br />
-        Content <br />
-        <input type="text" name="content" value="<?php $content; ?>" /><br />
-        Tags <br />
-        <input type="text" name="tags" value="<?php $tags; ?>" /><br />
-        Category<br />
-        <input type="text" name="category" value="<?php $category ?>" /> <br />
-        <input type="submit" name="submit" value="Submit"  />
-       </form>
-    </div>
-  </div>
-
-  <div data-role="main" class="ui-content">
-    <div data-role="collapsible" id="display">
-      <h1> Click me - Display Entries </h1>
-      <?php  $entries = get_entries () ; ?>
-      <ul >
->>>>>>> ec7440342981608c2239efc6f039c3ac1055eb84
 
   <div class="container">
     <div class="row">
