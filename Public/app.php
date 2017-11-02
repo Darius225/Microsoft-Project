@@ -1,4 +1,8 @@
-
+<?php
+$log_out=$_POST['log_out'] ;
+echo $log_out ;
+)
+?>
 
 <?php
 $title = '' ;
