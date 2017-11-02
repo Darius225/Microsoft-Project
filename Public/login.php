@@ -17,11 +17,11 @@ if(is_post_request())
        else {
             if  ( is_blank ( $username ) )
             {
-                 $errors[] = "Username field can not be left blank ! " ;
+                 $errors[] = "Username field can not be left blank! " ;
              }
             if ( is_blank ( $password ) )
             {
-                 $errors[] .= "Password field can not be left blank !" ;
+                 $errors[] .= "Password field can not be left blank!" ;
             }
             if ( empty( $errors ) )
             {
@@ -91,8 +91,10 @@ if(is_post_request())
             <label for="password">Password</label>
           </div>
         </div>
-        <input type="submit" value="Login"  />
-        <input type="submit" name="register" value="Register" />
+        <a class="waves-effect waves-light btn" type="submit">log in</a>
+        <a class="waves-effect waves-light btn" type="submit" name="register">Register</a>
+        <!-- <input class="waves-effect waves-light btn" type="submit" value="Login"/> -->
+        <!-- <input type="submit" name="register" value="Register" /> -->
       </form>
     </div>
 
