@@ -47,36 +47,18 @@ if(is_post_request())
 ?>
 
 <!DOCTYPE html>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <title>Voytech</title>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-  <style>
-
-   .theblue {
-     color: #1daef7;
-   }
-
-   .centered {
-     position: relative;
-     transform: translate(0, -50%);
-     text-align: center;
-    }
-
-    .middle {
-      top: 50%;
-    }
-
-  </style>
-
 </head>
 
 <body>
-  <div class="container">
+  <div class="container ">
     <h1>Log in</h1>
 
     <div class="row">
@@ -91,10 +73,8 @@ if(is_post_request())
             <label for="password">Password</label>
           </div>
         </div>
-        <a class="waves-effect waves-light btn" type="submit">log in</a>
-        <a class="waves-effect waves-light btn" type="submit" name="register">Register</a>
-        <!-- <input class="waves-effect waves-light btn" type="submit" value="Login"/> -->
-        <!-- <input type="submit" name="register" value="Register" /> -->
+        <input class="waves-light btn" type="submit" value="log in">
+        <input class="waves-light btn" type="submit" name="register" value="Register">
       </form>
     </div>
 
