@@ -4,6 +4,12 @@ $content = '' ;
 $tags = '' ;
 $category = '' ;
 $errors = [] ;
+$log_out = $_POST['log_out'] ?? '' ;
+if ( $log_out != '' )
+{
+   log_out_user() ;
+   redirect_to("index.php") ;
+}
  if ( is_post_request() )
  {
     $title = $_POST['title'] ?? '' ;
@@ -39,7 +45,9 @@ $errors = [] ;
      <div class="nav-wrapper amber darken-1" style="color:black;">
        <span class="brand-logo" style="margin-left:15px; color:black;"><b>Keep</b></span>
        <div id="nav-mobile" class="right">
-         <input class="waves-light btn amber" type="submit" value="log out" style="color: black; margin: 15px;">
+        <form method="post" action ="">
+         <input class="waves-light btn amber" type="submit" name="log_out" >
+        </form>
        </div>
      </div>
    </nav>
