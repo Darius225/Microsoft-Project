@@ -64,4 +64,13 @@ function get_entries ( )
   $result = mysqli_query( $db , $sql ) ;
   return $result ;
 }
+
+function get_entries_reverse ( )
+{
+  global $db ;
+  $sql = "SELECT * FROM entries " ;
+  $sql .= "ORDER BY id DESC" ;
+  $result = mysqli_query( $db , $sql ) ;
+  return $result ;
+}
 ?>
