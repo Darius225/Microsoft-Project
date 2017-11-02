@@ -80,28 +80,22 @@ if(is_post_request())
     <h1>Log in</h1>
 
     <div class="row">
-      <form class="col s12">
+      <form class="col s12" action = "" method="post">
         <div class="row">
           <div class="input-field col s6">
-            <input id="first_name" type="text" class="validate">
-            <label for="first_name">Username</label>
+            <input id="username" name="username" type="text" class="validate">
+            <label for="username">Username</label>
           </div>
           <div class="input-field col s6">
-            <input id="last_name" type="text" class="validate">
-            <label for="last_name">Password</label>
+            <input id="password" name="password" type="text" class="validate">
+            <label for="password">Password</label>
           </div>
         </div>
+        <input type="submit" value="Login"  />
+        <input type="submit" name="register" value="Register" />
       </form>
     </div>
 
-    <form action="" method="post">
-      Username:<br />
-      <input type="text" name="username" value="<?php $username; ?>" /><br />
-      Password:<br />
-      <input type="password" name="password" value="" /><br />
-      <input type="submit" value="Login"  />
-      <input type="submit" name="register" value="Register" />
-    </form>
   </div>
 
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
