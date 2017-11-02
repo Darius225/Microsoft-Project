@@ -27,11 +27,12 @@ $errors = [] ;
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <script>
-    myFunction() {
-
+  <style>
+    textarea:focus {
+      border-bottom: none;
+      box-shadow: none;
     }
-  </script>
+  </style>
 </head>
 <body>
   <nav>
@@ -44,9 +45,9 @@ $errors = [] ;
    </nav>
   <div class="container">
     <br><br>
-    <form class="container" action="" method="post" style="width:500;" >
+    <form class="container" action="" method="post" style="width:500; line-height:1px" >
       <input class="waves-light btn amber right" type="submit" name="submit" value="save" style="color:black;">
-      <input class="input-field inline" type="text" name="title" placeholder="Title" style="font-size:16px; font-weight:bold;">
+      <input class="input-field inline" type="text" name="title" placeholder="Title" style="font-size:20px; font-weight:bold; border-bottom:0;">
       <input type="text" name="content" placeholder="Take a note..." style="font-size:16px;" autofocus>
      </form>
 
