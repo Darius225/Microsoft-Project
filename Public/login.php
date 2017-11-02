@@ -47,18 +47,14 @@ if(is_post_request())
 ?>
 
 <!DOCTYPE html>
-<!-- saved from url=(0021)https://gvoy.tech/ms/ -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
   <title>Voytech</title>
-  <meta name="description" conent="My personal website summarising my projects, passions and achievements.">
-  <meta name="keywords" content="computer science, games development, design, music">
-  <meta name="author" content="Wojciech Golaszewski">
-  <meta http-equiv="X-Ua-Compatible" content="IE=edge, chrome=1">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-  <link href="./Voytech_files/css" rel="stylesheet">
-  <link rel="stylesheet" href="./Voytech_files/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-  <link rel="stylesheet" href="./Voytech_files/msstyling.css">
   <style>
 
    .theblue {
@@ -78,9 +74,25 @@ if(is_post_request())
   </style>
 
 </head>
+
 <body>
-  <div id="content">
+  <div class="container">
     <h1>Log in</h1>
+
+    <div class="row">
+      <form class="col s12">
+        <div class="row">
+          <div class="input-field col s6">
+            <input id="first_name" type="text" class="validate">
+            <label for="first_name">Username</label>
+          </div>
+          <div class="input-field col s6">
+            <input id="last_name" type="text" class="validate">
+            <label for="last_name">Password</label>
+          </div>
+        </div>
+      </form>
+    </div>
 
     <form action="" method="post">
       Username:<br />
@@ -90,6 +102,8 @@ if(is_post_request())
       <input type="submit" value="Login"  />
       <input type="submit" name="register" value="Register" />
     </form>
-
   </div>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.js"></script>
 </body>
