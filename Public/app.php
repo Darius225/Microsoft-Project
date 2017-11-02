@@ -23,7 +23,7 @@
   </div>
 
   <div data-role="main" class="ui-content">
-    <div data-role="collapsible">
+    <div data-role="collapsible" id="add" >
       <h1>Click me - Add a new entry to the notebook </h1>
       <form action="" method="post" >
         Title <br />
