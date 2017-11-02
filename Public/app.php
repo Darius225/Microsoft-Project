@@ -40,7 +40,7 @@
   </div>
 
   <div data-role="main" class="ui-content">
-    <div data-role="collapsible">
+    <div data-role="collapsible" id="display">
       <h1> Click me - Display Entries </h1>
       <?php  $entries = get_entries () ; ?>
       <ul >
