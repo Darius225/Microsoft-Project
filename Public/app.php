@@ -38,7 +38,7 @@ $errors = [] ;
      <div class="nav-wrapper amber darken-1" style="color:black;">
        <span class="brand-logo" style="margin-left:15px; color:black;"><b>Keep</b></span>
        <div id="nav-mobile" class="right">
-         <input class="waves-light btn amber" type="submit" value="log out" style="color: black; margin: 15px;">
+         <input class="waves-light btn amber" type="submit" name="log_out" style="color: black; margin: 15px;">
        </div>
      </div>
    </nav>
