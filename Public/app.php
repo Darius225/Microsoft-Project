@@ -30,6 +30,7 @@ $errors = [] ;
 <body>
 
 
+<<<<<<< HEAD
   <div class="container">
     <h1>Click me - Add a new entry to the notebook </h1>
     <form action="" method="post" >
@@ -75,6 +76,30 @@ $errors = [] ;
     </ul >
   </div>
 
+=======
+  <div data-role="main" class="ui-content">
+    <div data-role="collapsible" id="add" >
+      <h1>Click me - Add a new entry to the notebook </h1>
+      <form action="" method="post" >
+        Title <br />
+        <input type="text" name="title" value="<?php $title; ?>" /><br />
+        Content <br />
+        <input type="text" name="content" value="<?php $content; ?>" /><br />
+        Tags <br />
+        <input type="text" name="tags" value="<?php $tags; ?>" /><br />
+        Category<br />
+        <input type="text" name="category" value="<?php $category ?>" /> <br />
+        <input type="submit" name="submit" value="Submit"  />
+       </form>
+    </div>
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <div data-role="collapsible" id="display">
+      <h1> Click me - Display Entries </h1>
+      <?php  $entries = get_entries () ; ?>
+      <ul >
+>>>>>>> ec7440342981608c2239efc6f039c3ac1055eb84
 
   <div class="container">
     <div class="row">
