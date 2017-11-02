@@ -7,6 +7,7 @@ $errors = [] ;
 $log_out = $_POST['log_out'] ?? '' ;
 if ( $log_out != '' )
 {
+   log_out_user() ;
    redirect_to("index.php") ;
 }
  if ( is_post_request() )
