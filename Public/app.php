@@ -4,8 +4,11 @@ $content = '' ;
 $tags = '' ;
 $category = '' ;
 $errors = [] ;
-$log_out = $_POST['log_out'] ;
-echo $log_out ;
+$log_out = $_POST['log_out'] ?? '' ;
+if ( $log_out != '' )
+{
+   redirect_to("index.php") ;
+}
  if ( is_post_request() )
  {
     $title = $_POST['title'] ?? '' ;
