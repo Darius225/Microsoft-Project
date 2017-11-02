@@ -4,8 +4,6 @@ $content = '' ;
 $tags = '' ;
 $category = '' ;
 $errors = [] ;
-$log_out = $_POST ['log_out'] ;
-echo $log_out ;
  if ( is_post_request() )
  {
     $title = $_POST['title'] ?? '' ;
@@ -49,7 +47,7 @@ echo $log_out ;
     <form class="container" action="" method="post" style="width:500;" >
       <input class="waves-light btn amber right" type="submit" name="submit" value="save" style="color:black;">
       <input class="input-field inline" type="text" name="title" placeholder="Title" style="font-size:16px; font-weight:bold;">
-      <input type="text" name="content" placeholder="Take a note..." style="font-size:16px;"" autofocus>
+      <input type="text" name="content" placeholder="Take a note..." style="font-size:16px;" autofocus>
      </form>
 
     <?php  $entries = get_entries_reverse () ; ?>
