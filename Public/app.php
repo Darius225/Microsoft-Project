@@ -1,4 +1,10 @@
 <?php
+$log_out=$_POST['log_out'] ;
+echo $log_out ;
+)
+?>
+
+<?php
 $title = '' ;
 $content = '' ;
 $tags = '' ;
@@ -32,7 +38,7 @@ $errors = [] ;
      <div class="nav-wrapper amber darken-1" style="color:black;">
        <div id="nav-mobile" class="right">
          <span class="brand-logo" style="margin-left:15px; color:black; text-align: right;"><b>Keep</b></span>
-         <input class="waves-light btn amber" type="submit" value="log out" style="color: black; margin: 15px;">
+         <input class="waves-light btn amber" type="submit" name="log_out" value="log out" style="color: black; margin: 15px;">
        </div>
      </div>
    </nav>
