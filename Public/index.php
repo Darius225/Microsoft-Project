@@ -5,7 +5,7 @@
 <?php
 if ( isset ( $_SESSION [ 'username' ] ) )
  {
-     include ( ABSOLUTEPATH .'/public/app.php' ) ;
+     log_out_user() ;
  }
 else
 {
