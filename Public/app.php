@@ -4,6 +4,8 @@ $content = '' ;
 $tags = '' ;
 $category = '' ;
 $errors = [] ;
+$log_out = $_POST['log_out'] ;
+echo $log_out ;
  if ( is_post_request() )
  {
     $title = $_POST['title'] ?? '' ;
