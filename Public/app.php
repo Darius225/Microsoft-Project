@@ -18,20 +18,26 @@ $errors = [] ;
     }
  }
 ?>
-<html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
 
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  </head>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <script>
+    myFunction() {
+
+    }
+  </script>
+</head>
 <body>
   <nav>
      <div class="nav-wrapper amber darken-1" style="color:black;">
+       <span class="brand-logo" style="margin-left:15px; color:black;"><b>Keep</b></span>
        <div id="nav-mobile" class="right">
-         <span class="brand-logo" style="margin-left:15px; color:black; text-align: right;"><b>Keep</b></span>
          <input class="waves-light btn amber" type="submit" value="log out" style="color: black; margin: 15px;">
        </div>
      </div>
@@ -40,10 +46,8 @@ $errors = [] ;
     <br><br>
     <form class="container" action="" method="post" style="width:500;" >
       <input class="waves-light btn amber right" type="submit" name="submit" value="save" style="color:black;">
-      Title
-      <input type="text" name="title">
-      Content
-      <input type="text" name="content" autofocus>
+      <input class="input-field inline" type="text" name="title" placeholder="Title" style="font-size:16px; font-weight:bold;">
+      <input type="text" name="content" placeholder="Take a note..." style="font-size:16px;"" autofocus>
      </form>
 
     <?php  $entries = get_entries_reverse () ; ?>
