@@ -35,15 +35,43 @@
    print_r ( $errors) ;
  }
 ?>
-<div id="content">
-  <h1>Register </h1>
-  <form action="" method="post">
-    Email:<br />
-    <input type="text" name="email" value="<?php $email; ?>" /><br />
-    Username:<br />
-    <input type="text" name="username" value="<?php $username; ?>" /><br />
-    Password: <br />
-    <input type="password" name="password" value="<?php $password; ?>" /> <br />
-    <input type="submit" name="submit" value="Submit"  />
-  </form>
-</div>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Voytech</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+
+<body>
+  <div class="container">
+    <h2>Registration</h2>
+
+      <div class="row">
+      <form class="col s12" action = "" method="post">
+        <div class="row">
+          <div class="input-field col s6">
+            <input id="email" name="email" type="text" class="validate">
+            <label for="email">E-mail</label>
+          </div>
+          <div class="input-field col s6">
+            <input id="username" name="username" type="text" class="validate">
+            <label for="username">Username</label>
+          </div>
+          <div class="input-field col s6">
+            <input id="password" name="password" type="text" class="validate">
+            <label for="password">Password</label>
+          </div>
+        </div>
+       <input class="waves-light btn" type="submit" name="submit" value="Submit"  />
+      </form>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.js"></script>
+</body>
