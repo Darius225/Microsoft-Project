@@ -41,7 +41,7 @@ echo $log_out ;
        <span class="brand-logo" style="margin-left:15px; color:black;"><b>Keep</b></span>
        <div id="nav-mobile" class="right">
         <form method="post" action ="">
-         <input class="waves-light btn amber" type="submit" name="log_out" style="color: black; margin: 15px;">
+         <input class="waves-light btn amber" type="submit" name="log_out" >
         </form>
        </div>
      </div>
