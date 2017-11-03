@@ -51,6 +51,7 @@
     if ( !empty($errors) )
     {
          print_r ( $errors) ;
+         redirect_to( 'index.php' ) ;
     }
 ?>
 
