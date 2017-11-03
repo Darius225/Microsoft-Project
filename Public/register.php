@@ -49,6 +49,7 @@
  ?>
  <?php if ( !empty($errors) )
  {
+   redirect_to( "register.php" ) ;
    print_r ( $errors) ;
  }
 ?>
