@@ -30,7 +30,8 @@ if(is_post_request())
                  {
                        if ( password_verify ( $password , $user ['password'] ) )
                        {
-                         log_in_user ( $user ) ;
+                              log_in_user ( $user ) ;
+                              redirect_to("index.php") ;
                        }
                        else
                        {
