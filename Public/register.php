@@ -78,6 +78,7 @@
           </div>
         </div>
        <input class="waves-light btn" type="submit" name="submit" value="Submit"  />
+       <input class="waves-light btn" type="submit" name="Back_to_login" value="Back to login"  />
       </form>
     </div>
   </div>
