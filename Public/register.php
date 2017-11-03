@@ -11,7 +11,7 @@
        $password = $_POST [ 'password' ] ?? '' ;
        if ( is_blank ( $email ) || !has_valid_email_format ( $email ) )
        {
-          $errors[] = "You should submit a valid email !" ;
+          $errors[] .= "You should submit a valid email !" ;
        }
        if ( is_blank ( $username ) )
        {
@@ -20,6 +20,11 @@
        if ( is_blank ( $password ) )
        {
           $errors[] .= "You can not leave the password field blank !" ;
+       } 
+       $user = find_user_by_username ( $username ) ;
+       if ( ! is_blank( $user ) )
+       {
+          $errors[] .= "There is already a user registered with the same username." ;
        }
        if ( empty ( $errors ) )
        {
