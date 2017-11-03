@@ -3,7 +3,7 @@
   $email = '' ;
   $username = '' ;
   $password = '' ;
-  $errors = [] ;
+  $errors = array() ;
   if ( is_post_request () )
   {
        $email =$_POST [ 'email' ] ?? '' ;
