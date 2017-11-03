@@ -70,7 +70,7 @@ if(is_post_request())
             <label for="username">Username</label>
           </div>
           <div class="input-field col s6">
-            <input id="password" name="password" type="text" class="validate">
+            <input id="password" name="password" type="password" class="validate">
             <label for="password">Password</label>
           </div>
         </div>
