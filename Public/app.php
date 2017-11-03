@@ -76,9 +76,9 @@ if ( $log_out != '' )
                          </span>
                          <p style="color:black;"> <?php echo $entry [ 'content' ] ; ?> </p>
                        </div>
-                       <div class="card-action">
-                         dosv
-                       </div>
+                       <!-- <div class="card-action">
+                           <input class="waves-light btn-flat" type="submit" name="delete" value="delete" style="color:#ffc107; font-weight:bold;">
+                       </div> -->
                      </div>
                    </div>
            <?php }?>
