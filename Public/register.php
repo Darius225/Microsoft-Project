@@ -50,8 +50,7 @@
  <?php
     if ( !empty($errors) )
     {
-         print_r ( $errors) ;
-         redirect_to( 'index.php' ) ;
+         redirect_to( 'register.php' ) ;
     }
 ?>
 
