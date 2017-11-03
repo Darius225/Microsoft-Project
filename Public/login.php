@@ -74,8 +74,8 @@ if(is_post_request())
             <label for="password">Password</label>
           </div>
         </div>
-        <input class="waves-light btn" type="submit" value="log in">
-        <input class="waves-light btn" type="submit" name="register" value="Register">
+        <input class="waves-light btn amber" type="submit" value="log in">
+        <input class="waves-light btn amber" type="submit" name="register" value="Register">
       </form>
     </div>
 
