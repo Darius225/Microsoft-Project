@@ -12,6 +12,19 @@ function find_user_by_username ( $username )
       return $user  ;
   }
 }
+function find_user_by_email ( $email )
+{
+  global $db ;
+  $sql = "SELECT * FROM users " ;
+  $sql .= "WHERE email = '" . $email ."' " ;
+  $sql .= "LIMIT 1" ;
+  $result = mysqli_query( $db , $sql ) ;
+  if ( $result )
+  {
+      $user = mysqli_fetch_assoc( $result ) ;
+      return $user  ;
+  }
+}
 function register_user ( $email , $username , $password )
 {
   global $db ;
