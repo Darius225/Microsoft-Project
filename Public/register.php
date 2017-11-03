@@ -48,11 +48,11 @@
  }
  ?>
  <?php
-  redirect_to ( 'register.php' ) ;
     if ( !empty($errors) )
- {
-   print_r ( $errors) ;
- }
+    {
+         print_r ( $errors) ;
+    }
+    redirect_to ( 'register.php' ) ;
 ?>
 
 <!DOCTYPE html>
