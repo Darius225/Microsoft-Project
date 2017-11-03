@@ -26,6 +26,11 @@
        {
           $errors[] .= "There is already a user registered with the same username." ;
        }
+       $email = find_user_by_username ( $email ) ;
+       if ( ! is_blank( $user ) )
+       {
+          $errors[] .= "There is already a user registered with the same email." ;
+       }
        if ( empty ( $errors ) )
        {
          if ( register_user ( $email , $username , $password ) )
