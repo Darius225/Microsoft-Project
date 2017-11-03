@@ -1,6 +1,7 @@
 <?php
     ob_start() ;
     session_start() ;
+    header("Connection: keep-alive") ;
 
     require_once ( 'database.php' ) ;
     require_once ( 'query_functions.php' ) ;
