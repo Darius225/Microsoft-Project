@@ -9,36 +9,43 @@
        $email =$_POST [ 'email' ] ?? '' ;
        $username = $_POST [ 'username' ] ?? '' ;
        $password = $_POST [ 'password' ] ?? '' ;
-       if ( is_blank ( $email ) || !has_valid_email_format ( $email ) )
+       $login = $_POST [ 'Back_to_login' ] ?? '' ;
+       if ( $login != ' ' )
        {
-          $errors[] .= "You should submit a valid email !" ;
+            redirect_to ( 'index.php' ) ;            
        }
-       if ( is_blank ( $username ) )
-       {
-          $errors[] .= "You can not leave the username field blank !" ;
-       }
-       if ( is_blank ( $password ) )
-       {
-          $errors[] .= "You can not leave the password field blank !" ;
-       } 
-       $user = find_user_by_username ( $username ) ;
-       if ( ! is_blank( $user ) )
-       {
-          $errors[] .= "There is already a user registered with the same username." ;
-       }
-       $email = find_user_by_username ( $email ) ;
-       if ( ! is_blank( $user ) )
-       {
-          $errors[] .= "There is already a user registered with the same email." ;
-       }
-       if ( empty ( $errors ) )
-       {
-         if ( register_user ( $email , $username , $password ) )
-         {
-           redirect_to ( 'index.php' ) ;
-         }
-       }
-  }
+       else {
+             if ( is_blank ( $email ) || !has_valid_email_format ( $email ) )
+             {
+                 $errors[] .= "You should submit a valid email !" ;
+             }
+             if ( is_blank ( $username ) )
+             {
+                 $errors[] .= "You can not leave the username field blank !" ;
+             }
+             if ( is_blank ( $password ) )
+             {
+                 $errors[] .= "You can not leave the password field blank !" ;
+             }   
+             $user = find_user_by_username ( $username ) ?? '' ;
+             if ( ! is_blank( $user ) )
+             {
+                $errors[] .= "There is already a user registered with the same username." ;
+             }
+             $user = find_user_by_username ( $email ) ?? '' ;
+             if ( ! is_blank( $user ) )
+             {
+                $errors[] .= "There is already a user registered with the same email." ;
+             }
+             if ( empty ( $errors ) )
+             {
+                 if ( register_user ( $email , $username , $password ) )
+                 {
+                      redirect_to ( 'index.php' ) ;
+                 }
+             }
+            }
+ }
  ?>
  <?php if ( !empty($errors) )
  {
