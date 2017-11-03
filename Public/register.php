@@ -62,27 +62,23 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-  <style>
-
-    .myunderline {
-      border-bottom-color: #ffc107;
-      -webkit-box-shadow-color: #ffc107;
-      box-shadow: #ffc107;
-
-    }
-  </style>
 </head>
 
-<body>
+<body class="grey lighten-4">
+  <nav>
+    <div class="nav-wrapper amber darken-1" style="color:black;">
+      <span class="brand-logo" style="margin-left:15px; color:black;"><b>Keep</b></span>
+      <div id="nav-mobile" class="right">
+      </div>
+    </div>
+  </nav>
+  <br><br>
   <div class="container">
-    <h2>Registration</h2>
-
-      <div class="row">
+    <div class="row">
       <form class="col s12" action = "" method="post">
         <div class="row">
           <div class="input-field col s6">
-            <input id="email" name="email" type="text" class="validate">
+            <input id="email" name="email" type="text" class="validate" autofocus>
             <label for="email">E-mail</label>
           </div>
           <div class="input-field col s6">
@@ -94,8 +90,8 @@
             <label for="password">Password</label>
           </div>
         </div>
-       <input class="waves-light btn amber" type="submit" name="submit" value="Submit"  />
-       <input class="waves-light btn amber" type="submit" name="Back_to_login" value="Back to login"  />
+       <input class="waves-light btn amber" type="submit" name="submit" value="Register" style="color:black;">
+       <input class="waves-light btn amber" type="submit" name="Back_to_login" value="Back to login" style="color:black;">
       </form>
     </div>
   </div>

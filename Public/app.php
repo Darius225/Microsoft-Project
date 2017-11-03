@@ -33,14 +33,9 @@ if ( $log_out != '' )
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <style>
-    textarea:focus {
-      border-bottom: none;
-      box-shadow: none;
-    }
-  </style>
+
 </head>
-<body>
+<body class="grey lighten-4">
   <nav>
      <div class="nav-wrapper amber darken-1" style="color:black;">
        <span class="brand-logo" style="margin-left:15px; color:black;"><b>Keep</b></span>
@@ -71,7 +66,7 @@ if ( $log_out != '' )
                  for ( $j = 0 ; $j < $step ; $j ++)
                  {?>
                    <div class="col s12 " style="width:<?php echo $wid."%"?>;">
-                     <div class="card grey lighten-4" >
+                     <div class="card" >
                        <div class="card-content white-text">
                          <span class="card-title" style="color:black;">
                            <?php
@@ -81,6 +76,9 @@ if ( $log_out != '' )
                          </span>
                          <p style="color:black;"> <?php echo $entry [ 'content' ] ; ?> </p>
                        </div>
+                       <div class="card-action">
+                         dosv
+                       </div>
                      </div>
                    </div>
            <?php }?>
@@ -89,40 +87,6 @@ if ( $log_out != '' )
     </ul >
   </div>
 
-
-  <div class="container">
-    <div class="row">
-        <div class="col s12 m6">
-          <div class="card blue-grey darken-1">
-            <div class="card-content white-text">
-              <span class="card-title">Card Title</span>
-              <p>I am a very simple card. I am good at containing small bits of information.
-              I am convenient because I require little markup to use effectively.</p>
-            </div>
-            <div class="card-action">
-              <a href="#">This is a link</a>
-              <a href="#">This is a link</a>
-            </div>
-          </div>
-        </div>
-        <div class="col s12 m6">
-          <div class="card blue-grey darken-1">
-            <div class="card-content white-text">
-              <span class="card-title">Card Title</span>
-              <p>I am a very simple card. I am good at containing small bits of information.
-                I am convenient because I require little markup to use effectively.</p>
-              </div>
-              <div class="card-action">
-              </div>
-            </div>
-          </div>
-      </div>
-
-
-  <div>
-
-  <!-- <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> -->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="js/materialize.js"></script>
 </body>

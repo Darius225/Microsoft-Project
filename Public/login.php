@@ -58,15 +58,23 @@ if(is_post_request())
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 
-<body>
+<body class="grey lighten-4">
+  <nav>
+     <div class="nav-wrapper amber darken-1" style="color:black;">
+       <span class="brand-logo" style="margin-left:15px; color:black;"><b>Keep</b></span>
+       <div id="nav-mobile" class="right">
+       </div>
+     </div>
+   </nav>
+   <br><br>
+
   <div class="container ">
-    <h1>Log in</h1>
 
     <div class="row">
       <form class="col s12" action = "" method="post">
         <div class="row">
           <div class="input-field col s6">
-            <input id="username" name="username" type="text" class="validate">
+            <input id="username" name="username" type="text" class="validate" autofocus>
             <label for="username">Username</label>
           </div>
           <div class="input-field col s6">
@@ -74,8 +82,8 @@ if(is_post_request())
             <label for="password">Password</label>
           </div>
         </div>
-        <input class="waves-light btn amber" type="submit" value="log in">
-        <input class="waves-light btn amber" type="submit" name="register" value="Register">
+        <input class="waves-light btn amber" type="submit" value="log in" style="color:black;">
+        <input class="waves-light btn amber" type="submit" name="register" value="Registration" style="color:black;">
       </form>
     </div>
 
