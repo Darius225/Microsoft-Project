@@ -1,5 +1,4 @@
 <?php
-    header("Connection: keep-alive") ;
     ob_start() ;
     session_start() ;
 
