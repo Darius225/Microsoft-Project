@@ -3,7 +3,7 @@
 
   function db_connect()
   {
-    $connection = mysqli_connect ( DB_SERVER,DB_USER,DB_PASSWORD,DB_NAME , true ) ;
+    $connection = mysqli_connect ( DB_SERVER,DB_USER,DB_PASSWORD,DB_NAME  ) ;
     return $connection ;
   }
   function db_disconnect( $connection )
