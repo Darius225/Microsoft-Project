@@ -10,7 +10,7 @@
        $username = $_POST [ 'username' ] ?? '' ;
        $password = $_POST [ 'password' ] ?? '' ;
        $login = $_POST [ 'Back_to_login' ] ?? '' ;
-       if ( $login != ' ' )
+       if ( $login != '' )
        {
             redirect_to ( 'index.php' ) ;            
        }
