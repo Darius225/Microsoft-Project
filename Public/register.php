@@ -47,9 +47,10 @@
             }
  }
  ?>
- <?php if ( !empty($errors) )
+ <?php
+  redirect_to ( 'register.php' ) ;
+    if ( !empty($errors) )
  {
-   redirect_to( "register.php" ) ;
    print_r ( $errors) ;
  }
 ?>
