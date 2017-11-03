@@ -46,7 +46,7 @@ if ( $log_out != '' )
        <span class="brand-logo" style="margin-left:15px; color:black;"><b>Keep</b></span>
        <div id="nav-mobile" class="right">
         <form method="post" action ="">
-         <input class="waves-light btn amber" type="submit" name="log_out" >
+         <input class="waves-light btn amber" type="submit" name="log_out" value="log out" style="margin: 15px; color:black;">
         </form>
        </div>
      </div>
@@ -56,7 +56,7 @@ if ( $log_out != '' )
     <form class="container" action="" method="post" style="width:500; line-height:1px" >
       <input class="waves-light btn amber right" type="submit" name="submit" value="save" style="color:black;">
       <input class="input-field inline" type="text" name="title" placeholder="Title" style="font-size:20px; font-weight:bold; border-bottom:0;">
-      <input type="text" name="content" placeholder="Take a note..." style="font-size:16px;" autofocus>
+      <input type="text" name="content" placeholder="Take a note..." style="font-size:16px; border-bottom:0;" autofocus>
      </form>
 
     <?php  $entries = get_entries_reverse () ; ?>
