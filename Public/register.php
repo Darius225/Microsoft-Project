@@ -3,7 +3,7 @@
   $email = '' ;
   $username = '' ;
   $password = '' ;
-  $errors = [] ;
+  $errors = array() ;
   if ( is_post_request () )
   {
        $email =$_POST [ 'email' ] ?? '' ;
@@ -47,10 +47,11 @@
             }
  }
  ?>
- <?php if ( !empty($errors) )
- {
-   print_r ( $errors) ;
- }
+ <?php
+    if ( !empty($errors) )
+    {
+         redirect_to( 'register.php' ) ;
+    }
 ?>
 
 <!DOCTYPE html>
